@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AngularBasics';
+
+  inputValue = ''
+
+  constructor() {
+
+  }
+
+  onInput(event?: any) {
+    this.inputValue = event.target.value
+  }
+
+  onClick(): void {
+    alert('click')
+  }
 }
